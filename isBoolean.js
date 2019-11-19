@@ -12,12 +12,17 @@ import getTag from './.internal/getTag.js'
  * isBoolean(false)
  * // => true
  *
+ * *
+ * isBoolean(true)
+ * // => true
+ *
  * * isBoolean(new Boolean())
  * // => true
  *
  * isBoolean(null)
  * // => false
  */
+
 function isBoolean(value) {
   return typeof value === 'boolean' || getTag(value) == '[object Boolean]'
 }
